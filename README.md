@@ -26,6 +26,7 @@ This project is a web application that uses deep learning to classify car images
 ```
 car-classification-project/
 ├── app.py 
+├── utils.py
 ├── static/
 │   ├── js/
 │   │   └── deepcars.js           # JavaScript functions
