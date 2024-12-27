@@ -4,6 +4,7 @@ import os
 from utils import allowed_file, load_model, predict_image
 from torchvision import transforms
 import torch
+
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 

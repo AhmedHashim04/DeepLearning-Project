@@ -1,12 +1,12 @@
 import os
 from PIL import Image
 import torch
+from torchvision import models
 
 def allowed_file(filename, allowed_extensions={'png', 'jpg', 'jpeg'}):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in allowed_extensions
 
 def load_model(model_path, num_classes, device):
-    from torchvision import models
     model = models.resnet50(pretrained=False)
     model.fc = torch.nn.Linear(model.fc.in_features, num_classes)
     model.load_state_dict(torch.load(model_path, map_location=device))

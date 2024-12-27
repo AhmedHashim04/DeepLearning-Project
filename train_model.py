@@ -8,6 +8,7 @@ from torchvision.datasets import ImageFolder
 
 # Training function
 def train_model(train_path, valid_path, save_path, device, epochs=50):
+    
     # Data transformations
     data_transforms = {
         'train': transforms.Compose([
