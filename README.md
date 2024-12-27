@@ -26,7 +26,11 @@ This project is a web application that uses deep learning to classify car images
 ```
 car-classification-project/
 ├── app.py 
+<<<<<<< HEAD
 ├── utils.py
+=======
+├── utils.py 
+>>>>>>> 255a4100fa9f7ddcf96d1fda5e9ddec6f0769cb4
 ├── static/
 │   ├── js/
 │   │   └── deepcars.js           # JavaScript functions
@@ -45,7 +49,7 @@ Follow the steps below to set up the project:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/AhmedFathyElrefaey/Car-Classification-Brand.git
+   git clone https://github.com/AhmedHashim04/DeepLearning-Project.git
    cd Car-Classification-Brand-main
    ```
 
@@ -78,10 +82,6 @@ Follow the steps below to set up the project:
    http://localhost:5000
    ```
 
-## Dataset Paths
-Ensure that the paths in the `app.py` file match your local environment:
-- `train_path`: Path to the training dataset.
-- `valid_path`: Path to the validation dataset.
 
 ## Usage
 1. Open the application in your web browser.
