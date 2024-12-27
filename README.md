@@ -78,10 +78,6 @@ Follow the steps below to set up the project:
    http://localhost:5000
    ```
 
-## Dataset Paths
-Ensure that the paths in the `app.py` file match your local environment:
-- `train_path`: Path to the training dataset.
-- `valid_path`: Path to the validation dataset.
 
 ## Usage
 1. Open the application in your web browser.
