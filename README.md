@@ -26,6 +26,7 @@ This project is a web application that uses deep learning to classify car images
 ```
 car-classification-project/
 ├── app.py 
+├── utils.py 
 ├── static/
 │   ├── js/
 │   │   └── deepcars.js           # JavaScript functions
@@ -44,7 +45,7 @@ Follow the steps below to set up the project:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/AhmedFathyElrefaey/Car-Classification-Brand.git
+   git clone https://github.com/AhmedHashim04/DeepLearning-Project.git
    cd Car-Classification-Brand-main
    ```
 
