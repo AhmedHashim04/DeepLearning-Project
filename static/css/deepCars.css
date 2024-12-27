@@ -1,0 +1,244 @@
+/* deepCars.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    color: #409fe8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #409fe8;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+nav ul li.icon img {
+    height: 40px;
+}
+
+/* Team Members Section */
+
+.icon {
+    margin-right: 10px;
+}
+
+/* icon animation */
+/* ... existing code ... */
+
+.icon {
+    cursor: pointer;
+    width: 50px;
+    transform-origin: center center;
+    display: inline-block;
+}
+
+.icon.init-transitions {
+    transition: all 0.8s ease;
+}
+
+.icon.active {
+    transform: rotate(720deg);
+}
+
+.members {
+    position: absolute;
+    right: -100%;
+    /* Change from transform to right positioning */
+    top: 80px;
+    padding: 1rem;
+    transition: right 0.5s ease;
+}
+
+.members.active {
+    right: 0;
+}
+
+
+.members {
+    padding: 10px;
+    animation: move 2s ease-out;
+}
+
+.members li:first-child {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.members li {
+    padding: 10px;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(2000px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.members li:not(:first-child):hover {
+    background-color: #409fe8;
+    color: white;
+    border-radius: 20px;
+}
+
+/* Upload Section */
+.section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.section h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.section label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.section img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.section img:hover {
+    transform: scale(1.1);
+}
+
+.section input[type="file"] {
+    display: none;
+}
+
+.section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.section button:hover {
+    background-color: #0056b3;
+}
+
+/* Car Information Section */
+.car-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.car-info img {
+    height: 100px;
+    border-radius: 8px;
+}
+
+.car-info .prediction-results {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.car-info h3 {
+    color: #007bff;
+}
+
+.car-info p {
+    color: #666;
+}
+
+/* Footer */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#footer .part h2 {
+    margin-bottom: 10px;
+    color: #ffc107;
+}
+
+#footer .part p {
+    line-height: 1.5;
+}
+
+.pipeline {
+    border: none;
+    height: 2px;
+    background-color: #007bff;
+    margin: 20px 0;
+}
